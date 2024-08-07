@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>New Video Form</title>
+  </head>
+
+  <body>
+    <h1>New Video Form</h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="./Collections/Math-videos.html">Math</a>
+      <a href="./Collections/Physics-videos.html">Physics</a>
+      <a href="./Collections/Space-videos.html">Space</a>
+      <div class="search">
+        <input id="search" type="text" placeholder="Search" />
+        <button>Search</button>
+      </div>
+    </nav>
+
+    <form target="_self" method="get">
+      <h2>Video Title</h2>
+
+      <label for="title-form"></label>
+      <input id="title" name="title" type="text" placeholder="Enter video title..." />
+
+      <h2>Description</h2>
+
+      <label for="description"></label>
+      <textarea rows="10" cols="30" placeholder="Enter video description..."></textarea>
+
+      <h2>Video</h2>
+
+      <label for="video"></label>
+      <input id="video" name="video" type="file" /><br /><br />
+      <label for="collection"></label>
+      <select id="collection">
+        <option value="math">Math</option>
+        <option value="physics" selected>Physics</option>
+        <option value="space">Space</option>
+      </select>
+      
+      <br />
+      <br />
+      
+      <input id="public" name="privacy" type="radio" />
+      <label class="public" for="public">Public</label>
+      <input id="private" name="privacy" type="radio" />
+      <label class="private" for="private">Public</label>
+      
+      <br />
+      <br />
+      
+      <button type="submit">Upload Video</button>
+      <br />
+    </form>
+    <br />
+
+    <hr />
+
+    <footer>
+      <a href="socialmedia.com">Facebook</a>
+      <a href="socialmedia.com">Twitter (X)</a>
+      <a href="socialmedia.com">Instagram</a>
+      <a href="socialmedia.com">YouTube</a>
+      <div>&copy;Copyright 2024</div>
+      <address>123 Cool St. Somewhere, OH</address>
+    </footer>
+  </body>
+</html>
